@@ -1,0 +1,15 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+#PATH=$PATH:$HOME/.local/bin:$HOME/bin
+#export PATH
+export ORACLE_SID=+ASM
+export ORACLE_BASE=/u01/app/grid
+export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/grid
+export PATH=$PATH:$ORACLE_HOME/bin
